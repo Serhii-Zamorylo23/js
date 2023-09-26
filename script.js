@@ -1,5 +1,7 @@
 let win = 0
 let loss = 0
-if (pass == User_Password){
-    alert
+const answer = prompt("Коли в мене день народження?")
+if (answer = Lus){
+    console.log("Ви виграли!");
+    win = win + 1
 }
