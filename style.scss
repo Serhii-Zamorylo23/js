@@ -1,0 +1,49 @@
+.information{
+    &_columnDiv{
+        width: 450px;
+        height: 400px;
+        background: darkgreen;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        &_left{
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            height: 100%;
+            background: firebrick;
+            row-gap: 10px;
+            &_item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 30px;
+                background: gold;
+                &_sum{
+                    color: rgb(24, 164, 24);
+                }
+            }
+        }
+        &_right{
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            height: 100%;
+            row-gap: 10px;
+            background: firebrick;
+            row-gap: 10px;
+            &_item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 30px;
+                background: gold;
+                &_sum{
+                    color: rgb(236, 21, 21);
+                }
+            }
+        }
+    }
+}

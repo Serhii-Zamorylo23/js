@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <script src="/script.js"> </script>
+    <div id="information">
+        <div id="information_input">
+            <p>Прибуток</p>
+          <input id="inputName1"type="text" placeholder="Введіть послугу">
+          <input id="inputSum1" type="text" placeholder="Введіть суму">
+          <button id="information_btn">Додати</button>
+        </div>
+        <div id="information_input2">
+            <p>Витрата</p>
+          <input id="inputName2" type="text" placeholder="Введіть послугу">
+          <input id="inputSum2" type="text" placeholder="Введіть суму">
+          <button id="information_btn2">Додати</button>
+        </div>
+        <div id="information_columnDiv" class="information_columnDiv">
+            <div id="information_columnDiv_left" class="information_columnDiv_left">
+            </div>
+            <div id="information_columnDiv_right" class="information_columnDiv_right">
+                <div id="information_columnDiv_rigt_item" class="information_columnDiv_right_item">
+                    <div class="information_columnDiv_right_item_name">sad</div>
+                    <div class="information_columnDiv_right_item_sum">-1231 грн</div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <script src="/script.js"></script>
 </body>
 </html>

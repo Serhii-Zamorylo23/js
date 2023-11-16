@@ -1,32 +1,28 @@
-/*const use= ()=>{
-    console.log("Hello")
+const InputEl1={
+    name:document.querySelector("#inputName1"),
+    sum:document.querySelector("#inputSum1"),
+    btn:document.querySelector("#information_btn"),
+    div:document.querySelector("#information_columnDiv_left")
 }
-use()
-for(let i=1;i<=10;i++){
-    use()
+const InputEl2={
+    inputName:document.querySelector("#inputName2"),
+    inputSum:document.querySelector("#inputSum2"),
+    btn:document.querySelector("#information_bt2"),
+    div:document.querySelector("#information_columnDiv_right")
 }
-*/
-let sum=0
-const products = [
-    { 
-        id: 1, 
-        name: "Iphone", 
-        price: 3000,
-        count: 2
-    }, 
-    {
-        id: 2,
-        name: "TV",
-        price: 5000,
-        count: 1
+InputEl1.btn.addEventListener("click",()=>{
+    const rerender=()=>{    
+        InputEl1.name.innerHTML=""
+        InputEl1.sum.innerHTML=""
+        const InputEl=(item)=>{
+            InputEl1.div.innerHTML=`
+            <div id="information_columnDiv_left_item" class="information_columnDiv_left_item">
+                    <div class="information_columnDiv_left_item_name">${item.name}</div>
+                    <div class="information_columnDiv_left_item_sum">${item.sum}</div>
+            </div>
+            `
+        }
     }
-]
-
-const totalSum = (productsArr) => { 
-    let sum = 0
-    for (let i=0;i<=productsArr.length-1;i++){
-        sum += productsArr[i].price*productsArr[i].count 
-    }
-    return(sum)
-}
-console.log(totalSum(products))
+    rerender()
+    InputEl(item)
+})
